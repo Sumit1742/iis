@@ -1,0 +1,46 @@
+Cryptography algorithm for caesar cipher
+
+Aim → the aim of the caesar cipher is to encrypt and decrypt                 massage by shifting the letters of the alphabet by a fixed number. 
+
+Theory→the caesar cipher works by shifting each letter in a massage by a certain number of positions in the alphabet 
+
+Procedure → 
+(1) Encryption —>(n+3)
+How to Encrypt
+Pick a Number: Choose how many letters you want to shift. For example, if you pick 3, each letter will move three places down the alphabet.
+Write Your Message: Start with the message you want to encrypt.
+Shift the Letters: For each letter:
+If it’s 'A', it becomes 'D' (3 letters forward).
+If it’s 'B', it becomes 'E', and so on.
+Combine Everything: Write down all the new letters to create your secret message.
+ (2) Decryption →(n-3)
+How to Decrypt
+Use the Same Number: You’ll use the same number you picked for encryption.
+Start with Your Secret Message: Take the encrypted message.
+Shift Back the Letters: For each letter:
+If it’s 'D', it goes back to 'A' (3 letters back).
+If it’s 'E', it goes back to 'B', and so on.
+Put It All Together: Write down the letters to reveal your original message.
+Result→Example
+Input Message: "HELLO"
+Shift Value: 3
+Encryption Process
+Plaintext: "HELLO"
+H → K (H + 3)
+E → H (E + 3)
+L → O (L + 3)
+L → O (L + 3)
+O → R (O + 3)
+Ciphertext: "KHOOR"
+Decryption Process
+Ciphertext: "KHOOR"
+K → H (K - 3)
+H → E (H - 3)
+O → L (O - 3)
+O → L (O - 3)
+R → O (R - 3)
+Plaintext: "HELLO"
+Summary of Results
+             Encrypted Message: "KHOOR"
+Decrypted Message: "HELLO"
+Conclusion → the Caesar cipher serves as a foundational example of encryption in the field of cryptography. Its simplicity and historical significance illustrate the basic principles of substitution ciphers, where each letter is shifted by a fixed number of positions in the alphabet. While the Caesar cipher offers minimal security against modern decryption techniques, it remains an important educational tool for understanding more complex cryptographic algorithms.
