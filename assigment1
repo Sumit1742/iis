@@ -1,0 +1,56 @@
+Assignment - 01
+
+Aim - To be able to perform convert  from cipher text to
+plain text and from plain text to cipher text.
+
+Theory -
+Plain text refers to data in a readable format, while cipher text is the encrypted version of that data. The process of transforming plain text into cipher text is known as encryption, whereas converting cipher text back into plain text is referred to as decryption.
+For example -
+
+If we convert a plain text (“HELLO”) to a cipher text . We can
+shift the value by 1-
+Here H becomes I
+E becomes F
+L becomes M
+Again L becomes M
+O becomes P
+And the output for this is “IFMMP” this is the encrypted value
+of a plain text.
+
+Procedure -
+
+● Firstly analyze that the text is a cipher or a plain text if
+the text is a plain text .
+● Now we have to shift the alphabet to right according to
+the shifted value to form an encrypted value .
+● And if the text is a cipher text then we have to decrypt the
+text and shift the alphabet to the left according to the
+shifting value.
+● Now verify that your answer is correct ,by encrypting the
+solution plaintext with your key.
+
+Architecture -
+
+For a very brief theory of shift ciphers and their analysis-
+Algorithm-
+For k=0:
+Cipher text : JRRG GDB
+Plain text: jrrg gdb
+For k=1:
+Cipher text : JRRG GDB
+Plain text : iqqf fca
+For k=2:
+Cipher text : JRRG GDB
+Plain text : hppe ebz
+For k =3:
+Cipher text : JRRG GDB
+Plain text: good day
+
+Result -
+
+Hence the result of the above encrypted data is “good day”.
+
+
+
+
+
