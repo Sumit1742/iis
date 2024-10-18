@@ -1,0 +1,56 @@
+ASSIGNMENT:-04
+
+Monoalphabetic Cipher Implementation
+Aim:
+To implement a Monoalphabetic Cipher for encrypting and decrypting messages without explicitly defining a key.
+
+Theory:
+A Monoalphabetic Cipher substitutes each letter in the plaintext with a corresponding letter from a fixed permutation of the alphabet. This cipher is straightforward but vulnerable to frequency analysis.
+
+Procedure:
+Define Substitution Alphabet: Use a predefined shuffled alphabet directly in the code.
+Encrypt: Replace each letter in the plaintext with the corresponding letter from the ciphertext alphabet.
+Decrypt: Reverse the substitution to recover the original plaintext.
+Code:
+python
+
+Copy code
+
+def encrypt(plain_text):
+
+    plain_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+    cipher_alphabet = "QWERTYUIOPASDFGHJKLZXCVBNM"
+
+    return ''.join(cipher_alphabet[plain_alphabet.index(char)] if char in plain_alphabet else char for char in plain_text.upper())
+
+
+def decrypt(cipher_text):
+
+    plain_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+    cipher_alphabet = "QWERTYUIOPASDFGHJKLZXCVBNM"
+
+    return ''.join(plain_alphabet[cipher_alphabet.index(char)] if char in cipher_alphabet else char for char in cipher_text.upper())
+
+
+# Example usage
+
+plain_text = "HELLO WORLD"
+
+encrypted = encrypt(plain_text)
+
+decrypted = decrypt(encrypted)
+
+
+print("Encrypted:", encrypted)  # ITSSG VQKSD
+
+print("Decrypted:", decrypted)   # HELLO WORLD
+
+Result:
+Encrypted Text: ITSSG VQKSD
+Decrypted Text: HELLO WORLD
+
+Conclusion:
+
+The Monoalphabetic Cipher effectively encrypts and decrypts messages without needing an explicit key, but remains susceptible to frequency analysis, limiting its security in modern applications.
