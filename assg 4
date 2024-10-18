@@ -1,0 +1,44 @@
+ASSIGNMENT-04
+
+AIM- To implement and understand monoalphabetic cipher.
+
+THEORY-The theory behind a monoalphabetic cipher is that each letter in a plaintext message is replaced by a corresponding letter in a ciphertext message: 
+Key: The key for a monoalphabetic cipher is a table that shows the correspondence between plaintext and ciphertext letters, or a function that computes the correspondence.
+Encryption: A single one-to-one mapping function is used to encrypt the entire message. 
+Symmetric encryption: The same key can be used to both encrypt and decrypt a message. 
+Breaking: Monoalphabetic ciphers can be broken using frequency analysis methods. 
+PROCEDURE-
+1.Create the Substitution Alphabet:
+Start with the standard alphabet (e.g., A-Z).
+Shuffle the alphabet to create a new substitution alphabet. Each letter in the original alphabet corresponds to a letter in the substitution alphabet.
+2.Encrypting Plaintext:
+Take your plaintext message and substitute each letter according to the substitution alphabet.
+Leave spaces, punctuation, and numbers unchanged.
+3.Decrypting Ciphertext:
+To decrypt, simply reverse the process by substituting letters back using the original alphabet.
+4.Key Distribution:
+Ensure that both the sender and receiver have access to the same substitution alphabet
+5.Security
+It provides security to the data by encrypting and decrypting it.
+ALGORITHM- 
+Example
+Key:
+Plaintext: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Ciphertext: QWERTYUIOPASDFGHJKLZXCVBNM
+Encryption:
+Input: "HELLO"
+Output: "TPPRA"
+Decryption:
+Input: "TPPRA"
+Output: "HELLO"
+Steps to implement mono alphabetic cipher text-
+Step 1-Key Generation
+Create a substitution alphabet that maps each letter of the plaintext alphabet
+Step2-Encryption Process
+Input: Plaintext message.
+Output: Ciphertext message.
+Step3-Decryption Process
+Input: Ciphertext message.
+Output: Plaintext message.
+RESULT- The result of applying the Monoalphabetic Cipher algorithm using the provided substitution alphabet.
+
